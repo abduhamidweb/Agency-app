@@ -1,0 +1,128 @@
+.oppor {
+  margin-top: 95px;
+  .section_cards {
+    margin-top: 40px;
+    .card {
+      background: rgba(17, 19, 23, 0.5);
+      border: 1px solid #4e4e4e;
+      backdrop-filter: blur(2.5px);
+      /* Note: backdrop-filter has minimal browser support */
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 433px;
+      .card-body {
+        padding: 0;
+        h5 {
+          margin-top: 30px;
+          font-weight: 700;
+          font-size: 24px;
+          position: relative;
+          line-height: 29px;
+
+          color: #ffffff;
+          &::after {
+            position: absolute;
+
+            left: 0;
+            display: block;
+            content: '';
+            margin-top: 10px;
+            width: 50px;
+            height: 3px;
+            background: #686464;
+            border-radius: 20px;
+          }
+        }
+        p {
+          margin-top: 28px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          /* or 138% */
+
+          color: #ffffff;
+        }
+      }
+      .img-card {
+        width: 70px;
+        height: 70px;
+      }
+      &:hover {
+        background: rgba(17, 19, 23, 0.315);
+      }
+      &:active {
+        background: rgba(17, 19, 23, 0.651);
+      }
+    }
+    .desctop {
+      display: block;
+    }
+    .phone {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .oppor {
+    margin-top: 95px;
+    .section_cards {
+      margin-top: 40px;
+      .card {
+        background: rgba(17, 19, 23, 0.5);
+        border: 1px solid #4e4e4e;
+        backdrop-filter: blur(2.5px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+        padding: 25px;
+        .card-body {
+          padding: 0;
+          h5 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 24px;
+            position: relative;
+            line-height: 29px;
+
+            color: #ffffff;
+            &::after {
+              position: absolute;
+              left: 0;
+              display: block;
+              content: '';
+              margin-top: 10px;
+              width: 50px;
+              height: 3px;
+              background: #686464;
+              border-radius: 20px;
+            }
+          }
+          p {
+            margin-top: 28px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            /* or 138% */
+
+            color: #ffffff;
+          }
+        }
+        .img-card {
+          width: 70px;
+          height: 70px;
+        }
+        &:hover {
+          background: rgba(17, 19, 23, 0.315);
+        }
+        &:active {
+          background: rgba(17, 19, 23, 0.651);
+        }
+      }
+      .desctop {
+        display: none;
+      }
+      .phone {
+        display: block;
+      }
+    }
+  }
+}

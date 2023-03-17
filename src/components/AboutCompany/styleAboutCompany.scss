@@ -1,0 +1,45 @@
+.about {
+//   background-image: url(../../assets/images/bodyBackground.png);
+  background-color: #000000;
+  z-index: 999 !important;
+  padding: 100px 0 90px 0;
+  margin-top: 120px;
+  .aboutRow{
+place-items: center;
+}
+  .aboutTitle {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+    color: #ffffff;
+    z-index: 99 !important;
+  }
+  .aboutText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: rgb(255, 255, 255);
+    z-index: 99 !important;
+  }
+  .aboutCardTitle{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;    
+
+}
+.aboutCardText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;    
+    color: #FFFFFF;
+    
+}
+}

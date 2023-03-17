@@ -1,0 +1,33 @@
+.heroBtnn{
+  width: 200px;
+  margin-top: 100px;
+  display: inline !important;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6911ad;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 12px 21px 12px 21px;
+  &::before{
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease;
+  left: 0px;
+  top:-32%;
+  width: 70px;
+  height: 70px;
+  border-radius:50%;
+  background-color: #ffffff;
+  z-index: -1;
+// filter:hue-rotate(120deg);
+  }
+  &:hover{
+  color: #fff;
+  }
+  &:hover::before{
+  width: 100%;
+  background-color: #6911ad;
+  border-radius: 35px;
+  }
+}

@@ -1,0 +1,106 @@
+.hero {
+  margin-top: 140px;
+
+  .topRight {
+    position: absolute;
+    right: -200px;
+    top: -300px;
+    width: 514.82px;
+    height: 657.4px;
+    background: linear-gradient(
+      105.05deg,
+      #267dff 1.69%,
+      #ed0080 48.42%,
+      #00ffe0 85.83%
+    );
+    opacity: 0.5;
+    filter: blur(100px);
+    transform: rotate(-154.36deg);
+  }
+  .leftBottom {
+    position: absolute;
+    left: -100px;
+    top: 745px;
+    width: 1237.6px;
+    height: 493.05px;
+    background: linear-gradient(
+      105.05deg,
+      #267dff 1.69%,
+      #ed0080 48.42%,
+      #0075ff 85.83%
+    );
+    opacity: 0.5;
+    filter: blur(75px);
+    transform: rotate(25.64deg);
+  }
+  .heroInfoWrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heroTitle {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58px;
+      color: #ffffff;
+    }
+    .heroText {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+  }
+  .heroBtnn {
+    width: 180px;
+    margin-top: 100px;
+    display: inline !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6911ad;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 12px 21px 12px 21px;
+    &::before {
+      position: absolute;
+      content: "";
+      transition: all 0.3s ease;
+      left: 0px;
+      top: -32%;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      z-index: -1;
+      // filter:hue-rotate(120deg);
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:hover::before {
+      width: 100%;
+      background-color: #6911ad;
+      border-radius: 35px;
+    }
+  }
+  .cubeWrapp{
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+  .cubeWrapp{
+  display: flex;
+  justify-content: center;
+  }
+}
+@media only screen and (max-width: 567px) {
+.heroTitle{
+
+  font-weight: 600;
+  font-size: 32px !important;
+  line-height: 35px !important;}
+
+}

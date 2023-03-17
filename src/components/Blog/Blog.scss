@@ -1,0 +1,127 @@
+.BlogCard{
+        max-width: 403px;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(14, 16, 20, 0.9), rgba(14, 16, 20, 0.9)),
+        linear-gradient(0deg, #4E4E4E, #4E4E4E);
+        border: 1px solid #999999;
+        border-radius: 20px;
+
+
+        &__img{
+            width: 333px !important;
+            overflow: hidden;
+        }
+
+        &__Body{
+            h5{
+                
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: white;
+                margin-bottom: 39px;
+            }
+            p{
+                
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #FFFFFFB2;
+                
+
+            }
+            span{
+                margin-top: 20px;
+                p{
+                    
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #DEDEDE;
+
+                }
+            }
+        }
+}
+.BlogContainer{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.swiper-button-next {
+    background: #444444B2 !important;
+   color: white;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    position: absolute;
+    right: -1px !important;
+}
+
+.swiper-button-prev {
+   width: 70px !important;
+   height: 70px !important;
+   background: #444444B2 !important;
+   border-radius: 50%;
+   color: white;
+}
+.buttons{
+    position: relative;
+    width: 100%;
+
+}
+.prev{
+    position: absolute;
+    left: -100px;
+    top: 270px;
+    border: none;
+    background-color: white;
+
+}
+.next{
+    position: absolute;
+    left: 101% !important;
+    top: 270px;
+    border: none;
+    background-color: white;
+
+
+}
+.BlogSlider{
+    margin: auto;
+    width: 100% !important;
+    justify-content: space-between;
+}
+.mySwiper{
+    width: 100%;
+}
+.blog{
+    h2{
+        margin: 120px 0px 40px 0px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .mySwiper {
+        max-width: 1200px !important;
+        width: 100%;
+    }
+    .BlogSlider{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 850px){
+
+    .swiper-slide{
+        width: 359px !important;
+        
+        }
+}

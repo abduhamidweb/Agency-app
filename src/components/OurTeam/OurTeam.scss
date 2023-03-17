@@ -1,0 +1,59 @@
+.OurTeamCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 287px;
+    overflow: hidden;
+    border-radius: 54px;
+        margin: 40px 0px;
+
+    
+&__Img{
+    overflow: hidden !important;
+    border-radius:20px ;
+    background-color: red !important;
+
+    img{
+        overflow: hidden !important;
+        border-radius: 20px;
+    background-color: red !important;
+
+    }
+}
+ 
+    &__body{
+        padding: 15px;
+         background: rgba(17, 19, 23, 0.864);
+        border: 1px solid #4E4E4E;
+        color: white;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+        width: 90%;  
+        top: -40px;
+
+            p{
+                margin-bottom: 0;
+            }
+    }
+    span{
+        display: block;
+        margin: 5px auto;
+        width: 100px !important;
+        background-color: white;
+        height: 2px;
+       
+    }
+}
+.swiper_slider {
+    width: 287px !important;
+}
+.team{
+
+    h2{
+        margin: 120px 0px 40px 0px ;
+        color: white;
+    }
+}
+

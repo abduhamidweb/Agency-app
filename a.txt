@@ -1,0 +1,96 @@
+import React, { useState } from 'react';
+import "./project.scss"
+import ProjectC from './ProjectC';
+const Projects = () => {
+    // ///////////////////////
+    const data = [
+        { id: 1, title: 'The Catcher in the Rye', category: 'Fiction' },
+        { id: 2, title: 'To Kill a Mockingbird', category: 'Fiction' },
+        { id: 3, title: '1984', category: 'Fiction' },
+        { id: 4, title: 'The Great Gatsby', category: 'Fiction' },
+        { id: 5, title: 'The Lean Startup', category: 'Business' },
+        { id: 6, title: 'Thinking, Fast and Slow', category: 'Psychology' },
+    ];
+    // ////////////////////////////
+    const [activeIndex, setActiveIndex] = useState(0);
+    const categories = ['All', ...new Set(data.map(item => item.category))];
+    const handleClick = (index) => {
+        setActiveIndex(index);
+    };
+
+    const filteredData = activeIndex === 0
+        ? data
+        : data.filter(item => item.category === categories[activeIndex]);
+
+
+    // const [txt, setTxt] = useState("Barchasi");
+    // let menu = [
+    //     "Barchasi",
+    //     "Veb sayt",
+    //     "Veb dizayn",
+    //     "SMM",
+    //     "Mobil ilova"
+    // ];
+    // let objects = [
+    //     { "id": 2, "title": "Veb sayt", "category": "SMM", "all": "barchasi" },
+    //     { "id": 3, "title": "Veb dizayn", "category": "SMM", "all": "barchasi" },
+    //     { "id": 4, "title": "SMM", "category": "design", "all": "barchasi" },
+    //     { "id": 5, "title": "Mobil ilova", "category": "mobile", "all": "barchasi" },
+    //     { "id": 6, "title": "Mobil ilova", "category": "mobile", "all": "barchasi" },
+    //     { "id": 6, "title": "Mobil ilova", "category": "mobile", "all": "barchasi" }
+    // ];
+    // objects = objects.filter(o => {
+    //     if (o.all.toLocaleLowerCase() == txt.toLocaleLowerCase()) {
+    //         return o
+    //     } else if (o.title.toLowerCase() == txt.toLowerCase()) {
+    //         return o
+    //     }
+    // });
+    return (
+        <>
+            <section className='projects'>
+                <div className="container">
+                    <div className="projects__title">
+                        <h2>Bajargan loyihalarimiz</h2>
+                    </div>
+                    <div className="projects__menu">
+                        <div className="projects__menu__wrap">
+                            {categories.map((category, index) => (
+                                <div
+                                    key={index}
+                                    className={`tab-item ${activeIndex === index ? 'active' : ''}`}
+                                    onClick={() => handleClick(index)}
+                                >
+                                    {category}
+                                </div>
+                            ))}
+                        </div>
+                        <div className="tab-content">
+                            {filteredData.map(item => (
+                                <div key={item.id} className="item">
+                                    <h3>{item.title}</h3>
+                                    <p>{item.category}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="projects__prekts">
+                        <div className="row">
+                            {/* {
+                                objects.map(item => {
+                                    return <ProjectC key={item.id} />
+                                })
+                            } */}
+                        </div>
+                    </div>
+                    <div className="projects__btn">
+                        <button className='projects__btn__item'>Barchasini ko’rish</button>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+};
+
+export default Projects;
+project__menu__wrap__item

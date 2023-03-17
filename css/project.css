@@ -1,0 +1,150 @@
+.projects {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.projects__title h2 {
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.projects__menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.projects__menu__wrap {
+  margin: 0 auto;
+  background: white;
+  max-width: 664px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(17, 19, 23, 0.5);
+  border: 1px solid #4e4e4e;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 90px;
+  padding: 1.1px;
+}
+.projects__menu__wrap span {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  color: #dadada;
+  padding: 12px 21px;
+}
+.projects__menu__wrap .active {
+  background: linear-gradient(93.5deg, #1e11ad 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+  border-radius: 30px;
+}
+.projects__prekts {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.projects__prekts .col-wrapper {
+  width: 390px;
+  height: 362px;
+  border-radius: 20px;
+  background-size: cover; /* rasmni qamrab o'tadigan o'lchamni belgilash */
+  background-position: center center; /* rasmni markazga joylashtirish */
+  position: relative;
+  cursor: pointer;
+}
+.projects__prekts .col-wrapper .card-txt {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 9px 43px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  border-radius: 3px;
+  background: white;
+}
+.projects__prekts .col-wrapper:hover .col__child {
+  display: block;
+}
+.projects__prekts .col__child {
+  position: relative;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 93%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+  padding: 30px;
+}
+.projects__prekts .col__child a {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.projects__prekts .col__child a i {
+  font-size: 30px;
+}
+.projects__prekts .col__child p {
+  top: 80%;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  position: absolute;
+}
+.projects__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__menu1 {
+  display: block;
+}
+
+.projects__menu2 {
+  display: none;
+}
+
+.projects__prekts1 {
+  display: block;
+}
+
+.projects__prekts2 {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .projects__prekts2 {
+    display: block;
+  }
+  .projects__prekts1 {
+    display: none;
+  }
+  .projects__menu1 {
+    display: none;
+  }
+  .projects__menu2 {
+    display: block;
+  }
+  .projects__menu2 .projects__menu__wrap {
+    display: none;
+  }
+}/*# sourceMappingURL=project.css.map */

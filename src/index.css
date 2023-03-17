@@ -1,0 +1,12 @@
+body{
+background-color: #1E1E1E !important;
+background-image: url(./assets/images/bodyBackground.png);
+overflow-x: hidden !important;
+position: relative !important;
+z-index: -1;
+}
+.container{
+max-width: 1270px !important;
+width: 100% !important;
+}
+

@@ -1,0 +1,104 @@
+.newsWrapp {
+  display: flex;
+gap: 30px;
+  margin-top: 30px;
+  .mainSec {
+    max-width: 900px;
+    width: 100%;
+    .topNewsImg {
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      filter: brightness(95%);
+      transition: all 0.3s ease;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .mainNewsTextWrapp{
+        color: #ffffff;
+    background-color: #000;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 40px;
+    .newsImg2{
+    max-width: 830px;
+    width: 100%;
+    border-radius: 20px;
+    }
+    .newsTitle{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .newsText{
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+    }
+    
+    }
+    .bottomDateInfo{
+        .newsShare{
+        cursor: pointer;
+        }
+    .bi-calendar-week, .bi-share{
+    margin-right: 10px;
+    }
+    }
+  }
+  .sidebar {
+    max-width: 320px;
+    width: 100%;
+    .sidebarCard {
+      border-radius: 20px;
+      border: 1px solid #4e4e4e;
+      &:hover {
+        .sidebarImg1 {
+          filter: brightness(110%);
+        }
+      }
+      .sidebarImg1 {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        filter: brightness(95%);
+        transition: all 0.3s ease;
+      }
+      .sidebarCardInfo {
+        padding: 15px 20px 25px 20px;
+        background-color: #000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        .sidebarCardTitle {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+.sidebar{
+display: none;
+}
+.mainSec{
+max-width: 960px;
+}
+
+}
+
+@media only screen and (max-width: 560px) {
+    .mainNewsTextWrapp{
+    
+        .newsTitle{
+            font-weight: 700;
+            font-size: 20px !important;
+            line-height: 24px !important;
+            margin-bottom: 20px;
+        }
+    }
+}
